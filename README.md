@@ -23,7 +23,16 @@ Projeto desenvolvido para análise de portas TCP, identificação de serviços e
 * Threading
 
 ---
+## 🧠 Como funciona
 
+O scanner realiza conexões TCP utilizando a biblioteca socket para verificar o estado das portas.
+
+- Porta ABERTA: conexão aceita
+- Porta FECHADA: conexão recusada
+- Porta FILTRADA: ausência de resposta (possível firewall)
+
+O uso de multithreading permite escanear múltiplas portas simultaneamente, aumentando a performance.
+---
 ## 📊 Exemplo de execução
 
 ```
